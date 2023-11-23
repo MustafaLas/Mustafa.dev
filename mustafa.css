@@ -262,7 +262,7 @@ nav ul a:hover {
 /* dark mode integration */
 
 .switch {
-  justify-content: end;
+  justify-content: ;
   position: relative;
   display: inline-block;
   width: 60px;
