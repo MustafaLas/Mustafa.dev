@@ -11,6 +11,8 @@
     content="Welcome to my developer portfolio! Explore a collection of my projects and web applications showcasing 
     my expertise in building dynamic and interactive user interfaces. With a passion for clean code and innovative 
     solutions, I strive to create seamless user experiences that blend functionality with stunning designs.">
+  
+    
 </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -21,14 +23,11 @@
 
           <h3>Mustafa.dev</h3>
 
-
           <ul>
-            
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" 
                 width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
@@ -39,27 +38,25 @@
               </svg>
             </li>
           </ul>
+
+          
+           <label class="switch">
+          <input onclick="darkMode()" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        
+        <script>
+          function darkMode() {
+              var element = document.body;
+              element.classList.toggle("dark-mode");
+          }
+      </script>
+
+      
+
       </nav>
 
-      <div class="mobile-nav closed-menu">
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" 
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-x">
-                <path d="M18 6l-12 12"></path>
-                <path d="M6 6l12 12">
-                </path>
-              </svg>
-            </span>
-
-            
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-
-      </div>
+  
 
       <section id="home" class="hero">
 
@@ -87,7 +84,7 @@
                     </svg>
                   </a>
 
-                  <a aria-label="twitter" rel="noreferrer" target="_blank" href="https://twitter.com/Moepro101">
+                  <a class="twitter-icon" aria-label="twitter" rel="noreferrer" target="_blank" href="https://twitter.com/Moepro101">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" 
                       viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
                       stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-twitter">
@@ -100,6 +97,8 @@
               </div>
               <div class="hero-img"></div>
             </div>
+
+
             <div class="skills">
               <p>Tech Stack</p>
               <div class="logos">
@@ -116,6 +115,25 @@
         
       </section>  
       
+      <div class="mobile-nav closed-menu">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" 
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-x">
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12">
+            </path>
+          </svg>
+        </span>
+
+        
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+  </div>
     </div>
   </body>
 </html>
