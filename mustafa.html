@@ -3,6 +3,8 @@
 <html lang="en">
 
 <head>
+
+  <!--Title-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mustafa.css"> <!-- Link to your external CSS file -->
@@ -11,24 +13,28 @@
     content="Welcome to my developer portfolio! Explore a collection of my projects and web applications showcasing 
     my expertise in building dynamic and interactive user interfaces. With a passion for clean code and innovative 
     solutions, I strive to create seamless user experiences that blend functionality with stunning designs.">
+
+    
   
     
 </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="root">
 
+      <!-- Navigation Bar -->
       <nav>
 
           <h3>Mustafa.dev</h3>
-
+          <!-- Links -->
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
+              <!-- Hamburger Menu -->
               <svg xmlns="http://www.w3.org/2000/svg" 
                 width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
                 stroke-linecap="round" stroke-linejoin="round" class="mobile-menu">
@@ -39,38 +45,29 @@
             </li>
           </ul>
 
+          <!-- Dark Mode Toggle -->
           <label class="switch">
             <input onclick="darkMode()" type="checkbox">
             <span class="slider round"></span>
           </label>
           
-           
-        
-        <script>
-          function darkMode() {
-              var element = document.body;
-              element.classList.toggle("dark-mode");
-          }
-      </script>
-
-      
-
+     
       </nav>
-
-  
-
+      <!-- End of Navigation Bar -->
       <section id="home" class="hero">
-
+        <!-- Hero Section -->
         <div class="container">
           <div class="content">
             <div class="hero-main">
               <div class="hero-text">
+                <!-- Hero Text -->
                 <h1>Front-End React <br> Developer</h1>
                 <img src="waving.1bae5fcfb51082b5c2b4.png" alt="waving_hand">
+                <!-- Hero Description -->
                 <p>Hi, I'm Mustafa Lashuel. A passionate Front-end React Developer based in San Francisco. 📍</p>
-                
+                <!-- Hero Social Links -->
                 <span>
-
+                  <!-- LinkedIn -->
                   <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/mustafa-lashuel-162210279/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin">
                       <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
@@ -78,13 +75,13 @@
                       <path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
                     </svg>
                   </a>
-
+                  <!-- Github -->
                   <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/MustafaLas">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github">
                       <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
                     </svg>
                   </a>
-
+                  <!-- Twitter -->
                   <a class="twitter-icon" aria-label="twitter" rel="noreferrer" target="_blank" href="https://twitter.com/Moepro101">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" 
                       viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
@@ -93,14 +90,21 @@
                     </svg>
                   </a>
 
-
                 </span>
               </div>
+              <!-- Hero Image -->
               <div class="hero-img"></div>
+
+              
+              <!-- End of hero image -->
+
+
+
             </div>
 
-
+            
             <div class="skills">
+              <!-- Skills Logo Section -->
               <p>Tech Stack</p>
               <div class="logos">
                 <ul>
@@ -136,5 +140,6 @@
 
   </div>
     </div>
+  
   </body>
 </html>
