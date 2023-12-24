@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@600&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Poppins:wght@700&family=Roboto:wght@500&display=swap');
 
+
+/* Global */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+* {
+  scrollbar-color: #8e8e8e #fff;
+  scrollbar-width: thin;
 }
 html {
   font-size: 62.5%;
@@ -11,20 +20,20 @@ html {
 }
 body {
   background-color: #fff;
-  color: rgb(0, 0, 0);
-  font-family: 'Poppins',sans-serif;
+  font-family: Poppins,sans-serif;
   position: relative;
 }
 img {
+  overflow-clip-margin: content-box;
   overflow: clip;
-  vertical-align: middle;
 }
+
 
 
 /* Nav Bar */
 nav {
-  background-color: inherit;
   align-items: center;
+  background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,.09);
   display: flex;
   font-size: 1.7rem;
@@ -37,16 +46,12 @@ nav {
   width: 100%;
   z-index: 200;
 }  
-nav h3 {
-  display: block;
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  margin : 0;
+.logo {
+  color: #2d2e32;
+  cursor: pointer;
 }
+
+
 nav ul {
   align-items: center;
   display: flex;
@@ -66,10 +71,11 @@ ul {
 }
 */
 nav ul a {
-  color: inherit;
-  font-weight: 500;
+  color: #2d2e32;
+  font-weight: 600;
   text-decoration: none;
-}
+  transition: all .23s;
+  }
 nav ul a:hover {
   color: rgb(168, 200, 248);
   transition: all .23s;
@@ -78,44 +84,43 @@ nav ul a:hover {
 
 /* Center home Page */
 .hero {
-  background-color: inherit;
-  position: relative;
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  position: relative;
   width: 100%;
 }
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 107rem;
   padding: 0 4rem;
 }
 .content {
   align-items: center;
   display: flex;
-  justify-content: center;
-  position: relative;
   gap: 10rem;
   height: 65rem;
-  margin-top: 10rem;
+  justify-content: center;
+  position: relative;
 }
 .hero-main {
   align-items: center;
   display: flex;
+  gap: 10rem;
   justify-content: center;
   position: relative;
-  gap: 10rem;
 }
 .hero-text {
-  
   display: flex;
   flex-direction: column;
-  position: relative;
   max-width: 50rem;
+  position: relative;
 }
 .hero-text h1 {
-  font-size: 55px;
+  color: #2d2e32;
+  font-size: 5.5rem;
   line-height: 1.2;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -128,7 +133,8 @@ nav ul a:hover {
   width: 6rem;
 }
 .hero-text p {
-  font-family: 'Mulish',sans-serif;
+  color: #555;
+  font-family: Mulish,sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.6;
@@ -164,17 +170,67 @@ nav ul a:hover {
   width: 35rem;
 }
 
+/*About Section*/
+
+.about {
+  padding: 8rem 0;
+  background-color: #fff;
+}
+.about-container {
+  margin-left: 50px;
+  margin-right: auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+}
+.about-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 10rem;
+  height: 35rem;
+  margin-top: 1rem;
+}
+.about-main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 10rem;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 50rem;
+}
+.about-main h1 {
+  font-size: 55px;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.about-text p {
+  font-family: 'Mulish',sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.highlight-word-about-text {
+  color: #a8c8f8;
+  font-weight: 600;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap');
 /* Tech stack bar */
 .skills {
   align-items: center;
+  bottom: 0;
+  color: #767676;
   display: flex;
   font-size: 1.7rem;
   left: 0;
   position: absolute;
-  margin: 0;
-  padding:  0;
-  bottom: 0;
 }
 .skills p {
   border-right: 2px solid currentColor;
@@ -329,10 +385,8 @@ input:checked + .slider:before {
 
 
 
-::-webkit-scrollbar-track {
-  background-color: #fff;
-  border-radius: 10px;
-}
+
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -344,7 +398,17 @@ input:checked + .slider:before {
   background-color: #fff;
   border-radius: 20px;
 }
-::-webkit-scrollbar-track {
-  background-color: #fff;
-  border-radius: 20px;
+
+/* Keyframes */
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }

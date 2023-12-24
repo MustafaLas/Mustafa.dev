@@ -1,32 +1,29 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
 <head>
 
-  <!--Title-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mustafa.css"> <!-- Link to your external CSS file -->
-    <title>Mustafa Lashuel Dev</title>
-    <meta name="description" 
-    content="Welcome to my developer portfolio! Explore a collection of my projects and web applications showcasing 
-    my expertise in building dynamic and interactive user interfaces. With a passion for clean code and innovative 
-    solutions, I strive to create seamless user experiences that blend functionality with stunning designs.">
+  <head>
 
-    
-  
-    
-</head>
+      <!--Title-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="mustafa.css"> <!-- Link to your external CSS file -->
+      <title>Mustafa Lashuel Dev</title>
+      <meta name="description" 
+      content="Welcome to my developer portfolio! Explore a collection of my projects and web applications showcasing 
+      my expertise in building dynamic and interactive user interfaces. With a passion for clean code and innovative 
+      solutions, I strive to create seamless user experiences that blend functionality with stunning designs."> 
+  </head>
 
   <body>
-
     <div id="root">
 
       <!-- Navigation Bar -->
       <nav>
 
-          <h3>Mustafa.dev</h3>
+          <h3 class="logo">Mustafa.dev</h3>
           <!-- Links -->
           <ul>
             <li><a href="#home">Home</a></li>
@@ -44,18 +41,10 @@
               </svg>
             </li>
           </ul>
-
-          <!-- Dark Mode Toggle -->
-          <label class="switch">
-            <input onclick="darkMode()" type="checkbox">
-            <span class="slider round"></span>
-          </label>
-          
-     
       </nav>
-      <!-- End of Navigation Bar -->
+      
+      <!-- Hero Section -->
       <section id="home" class="hero">
-        <!-- Hero Section -->
         <div class="container">
           <div class="content">
             <div class="hero-main">
@@ -64,7 +53,8 @@
                 <h1>Front-End React <br> Developer</h1>
                 <img src="waving.1bae5fcfb51082b5c2b4.png" alt="waving_hand">
                 <!-- Hero Description -->
-                <p>Hi, I'm Mustafa Lashuel. A passionate Front-end React Developer based in San Francisco. 📍</p>
+                <p>Hi, I'm Mustafa Lashuel. A passionate Front-end React Developer based in California, San Francisco. 📍</p>
+                
                 <!-- Hero Social Links -->
                 <span>
                   <!-- LinkedIn -->
@@ -89,22 +79,14 @@
                       <path d="M22.5 5.5C21.7 5.8 20.9 6 20 6.1C19.4 5.4 18.6 5 17.7 5.1C16.9 4.4 15.9 4 15 4C12.2 4 9.9 6.3 9.9 9.1C9.9 9.5 10 9.9 10.1 10.3C6.6 10.1 3.5 8.2 1.4 5.6C1 6.2 0.8 6.9 0.8 7.6C0.8 9.1 1.7 10.4 3 11C2.5 11.1 2.1 11.3 1.7 11.5C1.7 11.6 1.6 11.7 1.6 11.8C1.6 13.2 2.5 14.4 3.8 14.8C3.5 14.9 3.2 15 2.9 15.1C3.2 16.3 4.3 17.2 5.6 17.2C4.3 18 2.8 18.5 1.2 18.5C0.8 18.5 0.4 18.5 0 18.4C1.3 19.3 2.9 20 4.7 20C15 20 19.5 12.3 19.5 6.8C19.5 6.6 19.5 6.4 19.5 6.2C20.3 5.8 21.1 5.3 22.5 5.5Z"></path>
                     </svg>
                   </a>
-
                 </span>
               </div>
               <!-- Hero Image -->
               <div class="hero-img"></div>
-
-              
-              <!-- End of hero image -->
-
-
-
             </div>
 
-            
+            <!-- Skills Logo Section -->
             <div class="skills">
-              <!-- Skills Logo Section -->
               <p>Tech Stack</p>
               <div class="logos">
                 <ul>
@@ -117,8 +99,45 @@
             </div>
           </div>
         </div>
-        
       </section>  
+
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-main">
+              <div class="about-text">
+                <h1>About Me</h1>
+                <p>Hi, I'm Mustafa Lashuel. A passionate Front-end React Developer based in San Francisco. 📍</p>
+                <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+                <p>Shortly after graduating from <a href="https://www.hackreactor.com/" class="highlight-word-about-text">Hack Reactor</a>, I joined the engineering team at <a href="https://www.linkedin.com/company/airbnb/" class="highlight-word-about-text">Airbnb</a> where I work on a wide variety of interesting and meaningful projects on a daily basis.</p>
+                <p>Here are a few technologies I've been working with recently:</p>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
       
       <div class="mobile-nav closed-menu">
         <span>
@@ -137,9 +156,14 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-
-  </div>
+      </div>
+                <!-- Dark Mode Toggle -->
+                <label class="switch">
+                  <input onclick="darkMode()" type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+            </nav>
+      
     </div>
-  
   </body>
 </html>
