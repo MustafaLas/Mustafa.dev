@@ -1,11 +1,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<head>
-
   <head>
-
+    <script src="mustafa.js" defer></script>
       <!--Title-->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +13,6 @@
       my expertise in building dynamic and interactive user interfaces. With a passion for clean code and innovative 
       solutions, I strive to create seamless user experiences that blend functionality with stunning designs."> 
   </head>
-
   <body>
     <div id="root">
 
@@ -41,17 +37,23 @@
               </svg>
             </li>
           </ul>
+           <!-- Dark Mode Toggle 
+           <label class="switch">
+            <input onclick="darkMode()" type="checkbox">
+            <span class="slider round"></span>
+          </label> -->
       </nav>
       
       <!-- Hero Section -->
-      <section id="home" class="hero">
+      <section class="hero" id="home">
         <div class="container">
           <div class="content">
             <div class="hero-main">
               <div class="hero-text">
                 <!-- Hero Text -->
-                <h1>Front-End React <br> Developer</h1>
-                <img src="waving.1bae5fcfb51082b5c2b4.png" alt="waving_hand">
+                <h1 id="coolHeader" contenteditable="true">Front-End React <br> Developer</h1>
+
+                <img src="/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="waving_hand">
                 <!-- Hero Description -->
                 <p>Hi, I'm Mustafa Lashuel. A passionate Front-end React Developer based in California, San Francisco. 📍</p>
                 
@@ -101,69 +103,86 @@
         </div>
       </section>  
 
-
       <!-- About Section -->
-      <section id="about" class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about-content">
-            <div class="about-main">
-              <div class="about-text">
-                <h1>About Me</h1>
-                <p>Hi, I'm Mustafa Lashuel. A passionate Front-end React Developer based in San Francisco. 📍</p>
-                <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
-                <p>Shortly after graduating from <a href="https://www.hackreactor.com/" class="highlight-word-about-text">Hack Reactor</a>, I joined the engineering team at <a href="https://www.linkedin.com/company/airbnb/" class="highlight-word-about-text">Airbnb</a> where I work on a wide variety of interesting and meaningful projects on a daily basis.</p>
-                <p>Here are a few technologies I've been working with recently:</p>
-              </div>
-              
-              </div>
+            <div class="img-side">
+              <img src="/static/media/macbook-desk-coffe.webp" alt="mee" class="img-side__main-img">
+            </div>
+            <div class="text-side">
+              <h3>About Me</h3>
+              <h4>A dedicated Front-end Developer
+              <br>
+              based in California, San Francisco 📍
+              </h4>
+              <p>As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>=
             </div>
           </div>
         </div>
-
       </section>
 
-      
+      <!-- Projects Section -->
+      <section class="project" id="projects">
+        <div class="container">
+          <div class="project-content">
+            <p>Portfolio</p>
+            <h3>Each project is a unique piece of development 🧩</h3>
+            <div class="projects-grid">
 
 
 
 
 
 
+              <div class="pro pro__1 undefined">
+                  <div class="pro__img">
+                    <a target="_blank" href="https://car-rental-ten.vercel.app/" rel="noreferrer">
+                      <img src="/static/media/car-rental-full.c58b37da333d73238fdd.webp" alt="website" style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;">
+                    </a>
+                  </div>
+                <div class="pro__text">
+                  <h3>Car Rental <span class="date-class">(Febuary 2023)</span> 🚗</h3>
+                  <p>A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.</p>
+                  <div class="stack">
+                    <p>React</p>
+                    <p>SCSS</p>
+                  </div>
+
+                  <div class="links">
+                    <a target="_blank" href="https://github.com/stefvndev/car-rental" rel="noreferrer">Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+
+                    <a target="_blank" href="https://car-rental-ten.vercel.app/" rel="noreferrer">Live Demo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-external-link"><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path><path d="M11 13l9 -9"></path><path d="M15 4h5v5"></path></svg></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pro pro__1 reversed-proj">
+                <div class="pro__img">
+                  <a target="_blank" href="https://coindom-crypto-search.vercel.app/" rel="noreferrer">
+                    <img src="/static/media/coindom-full.c5fef9ca2f47e52897f8.png" alt="website" style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;">
+                  </a>
+                </div>
+                <div class="pro__text">
+                  <h3>Coindom <span class="date-class">(February 2023)</span> 🪙</h3>
+                  <p>Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time.</p>
+                  <div class="stack">
+                    <p>React</p>
+                    <p>SCSS</p>
+                  </div>
+
+                  <div class="links">
+                    <a target="_blank" href="https://github.com/stefvndev/coindom-crypto" rel="noreferrer">Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
 
 
-
-
-
-
-
-
-      
-      
-      <div class="mobile-nav closed-menu">
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" 
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-x">
-            <path d="M18 6l-12 12"></path>
-            <path d="M6 6l12 12">
-            </path>
-          </svg>
-        </span>
+                    <a target="_blank" href="https://coindom-crypto-search.vercel.app/" rel="noreferrer">Live Demo<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-external-link"><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path><path d="M11 13l9 -9"></path><path d="M15 4h5v5"></path></svg></a>
+                  </div>
+                </div>
+              </div>
+      </section>
 
         
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-      </div>
-                <!-- Dark Mode Toggle -->
-                <label class="switch">
-                  <input onclick="darkMode()" type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-            </nav>
-      
+
     </div>
   </body>
 </html>

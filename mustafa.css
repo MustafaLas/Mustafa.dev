@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Poppins:wght@700&family=Roboto:wght@500&display=swap');
 
 
+
 /* Global */
 * {
   box-sizing: border-box;
@@ -27,7 +28,19 @@ img {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
-
+section {
+  display: block;
+}
+div {
+  display: block;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
 
 /* Nav Bar */
@@ -91,13 +104,15 @@ nav ul a:hover {
   position: relative;
   width: 100%;
 }
-
 .container {
   margin: 0 auto;
   max-width: 107rem;
   padding: 0 4rem;
 }
+
+
 .content {
+  margin-top: 10rem;
   align-items: center;
   display: flex;
   gap: 10rem;
@@ -119,12 +134,20 @@ nav ul a:hover {
   position: relative;
 }
 .hero-text h1 {
-  color: #2d2e32;
-  font-size: 5.5rem;
-  line-height: 1.2;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
+    color: #2d2e32;
+    font-size: 5.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    cursor: default;
+    user-select: none; /* Prevent text selection */
+    outline: none; /* Remove default focus outline */
+  }
+
+  h1[contenteditable="true"]:hover {
+    cursor: text;
+  }
+
 .hero-text img {
   height: 6rem;
   position: absolute;
@@ -158,7 +181,7 @@ nav ul a:hover {
 .hero-img {
   -webkit-animation: morph 8s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
-  background-image: url("swissmoe.png.jpeg");
+  background-image: url("/static/media/swissmoe.png.jpeg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,53 +196,179 @@ nav ul a:hover {
 /*About Section*/
 
 .about {
-  padding: 8rem 0;
   background-color: #fff;
-}
-.about-container {
-  margin-left: 50px;
-  margin-right: auto;
-  max-width: 107rem;
-  padding: 0 4rem;
+  padding: 15rem 0;
 }
 .about-content {
   align-items: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
+}
+.img-side {
   position: relative;
-  gap: 10rem;
+}
+.img-side__main-img {
+  border-radius: 1.7rem;
   height: 35rem;
-  margin-top: 1rem;
+  width: 41rem;
 }
-.about-main {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  gap: 10rem;
+.text-side {
+  padding-right: 1.5rem;
 }
-.about-text {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  max-width: 50rem;
+.text-side h3 {
+  color: #147efb;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
-.about-main h1 {
-  font-size: 55px;
-  line-height: 1.2;
+.text-side h4 {
+  color: #2d2e32;
+  font-family: Poppins,sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.4;
   margin-bottom: 2rem;
-  margin-top: 2rem;
 }
-.about-text p {
-  font-family: 'Mulish',sans-serif;
-  font-size: 1.8rem;
+.text-side p {
+  color: #767676;
+  font-family: Mulish,sans-serif;
+  font-size: 1.7rem;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .highlight-word-about-text {
   color: #a8c8f8;
   font-weight: 600;
 }
+
+/* Projects Section */
+.project {
+  background-color: #f9f9f9;
+  padding: 15rem 0;
+}
+.project-content {
+  display: flex;
+  flex-direction: column;
+}
+.project-content p {
+  color: #147efb;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.project-content h3 {
+  color: #2d2e32;
+  font-size: 2.5rem;
+  margin-bottom: 6rem;
+}
+.projects-grid {
+  grid-gap: 5rem;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  height: auto;
+  width: 100%;
+}
+
+.projects-grid .pro {
+  background-color: #fff;
+  border-radius: 1.7rem;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  display: flex;
+}
+.projects-grid .pro__1 {
+  flex-direction: row;
+  gap: 8rem;
+  height: 40rem;
+  padding: 2rem;
+}
+.projects-grid .pro__img {
+  background-color: hsla(0,0%,46%,.2);
+  border-radius: 1.7rem;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  height: auto;
+  overflow: hidden;
+  width: 53rem;
+}
+element.style {
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+.projects-grid .pro__img img {
+  height: auto;
+  width: 100%;
+}
+.projects-grid .pro__text {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  width: 30rem;
+}
+.projects-grid .pro__text h3 {
+  align-items: center;
+  color: #2d2e32;
+  display: flex;
+  font-size: 1.7rem;
+  gap: 0.2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.date-class {
+  color: hsla(0,5%,8%,.773);
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
+}
+.projects-grid .pro__text p {
+  color: #767676;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: none;
+}
+.stack {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.stack p {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000!important;
+  font-family: Mulish,sans-serif!important;
+  font-weight: 600!important;
+  padding: 1rem 1.3rem;
+}
+.links {
+  gap: 1rem;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+.links a {
+  color: #2d2e32;
+  font-size: 1.7rem;
+  font-weight: 500;
+  gap: 5px;
+  text-decoration: none;
+}
+.links, .links a {
+  align-items: center;
+  display: flex;
+}
+
+
+
+
+
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap');
 /* Tech stack bar */
